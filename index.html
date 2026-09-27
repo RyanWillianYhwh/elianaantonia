@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel Saiyajin: informações, contato e assistente virtual informativo sobre psicanálise.">
+  <meta name="keywords" content="Painel Saiyajin, psicanálise, assistente virtual, atendimento">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Eliana Psicanalista">
+  <meta property="og:description" content="Informações, contato e assistente virtual">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy=       '32' r='30' fill='%23b3261e'/%3E%3Cpath d='M18 44 32 10l14 34-14-9z' fill='white'/%3E%3C/svg%3E">
+  <title>Eliana Psicanalista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Eliana <span>Psicanalista</span></div>
+    <nav aria-label="Navegação principal">
+      <ul>
+        <li><button type="button" data-scroll-target="quem-sou">Quem sou</button></li>
+        <li><button type="button" data-scroll-target="agente-ia">Agente de I.A</button></li>
+        <li><button type="button" data-scroll-target="contate-nos">Contate-nos</button></li>
+      </ul>
+      <div id="photo-end" aria-hidden="true"></div>
+    </nav>
+  </header>
+  <img id="https://images.vexels.com/media/users/3/259764/isolated/preview/85afb3f50f942d8e466b0ea8f5c65d9d-orquidea-botanica-cortada.png" alt="Imagem de perfil">
+  <main>
+    <section id="quem-sou">
+      <div class="hero-intro"><div id="photo-start" aria-hidden="true"></div><h2>Quem sou</h2></div>
+      <div class="texto-gohan">
+        <p>Sou um fã declarado de Dragon Ball e, se você me perguntar quem é o guerreiro mais forte do universo, minha resposta é direta: <strong>Gohan é mais forte que Goku</strong>.</p>
+        <p>Ainda criança, Gohan alcançou o Super Saiyajin 2 e foi ele — não Goku — quem derrotou Cell. O próprio Goku reconheceu o potencial extraordinário do filho.</p>
+        <p>Na saga Boo, Gohan atingiu a forma <strong>Mystic</strong> tornando-se o guerreiro mais poderoso entre os Z Fighters naquele momento.</p>
+        <p>O conceito do personagem sempre foi o de possuir o maior potencial entre todos os Saiyajins.</p>
+        <p>Goku continua sendo o protagonista da série. Porém, quando o assunto é potencial bruto e poder máximo, considero que Gohan ocupa esse posto.</p>
+      </div>
+    </section>
+    <section id="agente-ia">
+      <h2>Agente de I.A</h2>
+      <div class="ia-grid">
+        <div class="ia-card"><h3>Assistente Virtual</h3><p>Este assistente utiliza Inteligência Artificial para responder dúvidas gerais sobre psicanálise, explicar como funciona o atendimento e orientar visitantes.</p><p>As respostas possuem caráter informativo e não substituem uma consulta com um profissional.</p></div>
+        <div class="ia-card"><h3>Como posso ajudar?</h3><ul><li>✔ Explicar o que é Psicanálise</li><li>✔ Tirar dúvidas frequentes</li><li>✔ Explicar como funciona uma sessão</li><li>✔ Informar horários e formas de atendimento</li><li>✔ Encaminhar para o agendamento</li></ul></div>
+      </div>
+      <div class="ia-chat">
+        <div id="chat-mensagens" class="chat-mensagens" aria-live="polite" aria-label="Conversa com a assistente"></div>
+        <form id="chat-form" novalidate>
+          <label class="sr-only" for="campo-pergunta">Sua mensagem</label>
+          <textarea id="campo-pergunta" rows="1" maxlength="2000" placeholder="Digite sua pergunta..." autocomplete="off" required></textarea>
+          <button id="chat-enviar" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <section id="contate-nos">
+      <h2>Contate-nos</h2>
+      <div class="contato-wrap">
+        <div class="contato-info"><h3>Fale conosco</h3><p>E-mail: contato@painelsaiyajin.com</p><p>Telefone: (11) 0000-0000</p><p>Horário: Segunda a Sexta • 09h às 18h</p></div>
+        <form id="form-contato" class="contato-form" novalidate>
+          <label class="sr-only" for="contato-nome">Seu nome</label><input id="contato-nome" name="name" type="text" placeholder="Seu nome" maxlength="120" required>
+          <label class="sr-only" for="contato-email">Seu e-mail</label><input id="contato-email" name="email" type="email" placeholder="Seu e-mail" maxlength="254" required>
+          <label class="sr-only" for="contato-mensagem">Sua mensagem</label><textarea id="contato-mensagem" name="message" placeholder="Sua mensagem" maxlength="3000" required></textarea>
+          <button type="submit">Enviar mensagem</button><div id="status-envio" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><p class="marca">Eliana Psicanalista</p><p>© 2026 — Todos os direitos reservados.</p></footer>
+  <script src="script.js" defer></script>
+  <script src="chat.js" defer></script>
+</body>
+</html>
